@@ -28,6 +28,7 @@ fn main() {
         color!(reset)
     );
     
+    
     println!(
         "{}Error:{} {}Something went wrong{}",
         color!(red),
