@@ -1,0 +1,43 @@
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+Has color
+No Hello, Arceos!
+print_with_color fault
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+ramfs_rename fault
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+alt_alloc default
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+support_hashmap default
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+make[1]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload”
+make -C origin
+make[2]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/origin”
+make[2]: 对“all”无需做任何事。
+make[2]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/origin”
+make -C hello_c
+make[2]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/hello_c”
+riscv64-linux-musl-gcc -static hello.c -o hello
+make[2]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/hello_c”
+make[1]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload”
+File 'payload/mapfile_c/mapfile' doesn't exist!
+sys_mmap default
+    [92;1mCreating[0m FAT32 disk image "disk.img" ...
+mkfs.fat 4.2 (2021-01-31)
+make[1]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload”
+make -C origin
+make[2]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/origin”
+make[2]: 对“all”无需做任何事。
+make[2]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/origin”
+make -C hello_c
+make[2]: 进入目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/hello_c”
+riscv64-linux-musl-gcc -static hello.c -o hello
+make[2]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload/hello_c”
+make[1]: 离开目录“/home/oslab/桌面/2025s-arceos-DaZhou-ECHO/arceos/payload”
+File 'payload/skernel2/skernel2' doesn't exist!
+simple_hv default
+0
