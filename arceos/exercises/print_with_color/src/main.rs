@@ -26,14 +26,12 @@ fn main() {
         color!(green),
         color!(cyan),
         color!(reset)
-    );
-    
-    
-    println!(
-        "{}Error:{} {}Something went wrong{}",
-        color!(red),
-        color!(reset),
-        color!(yellow),
-        color!(reset)
-    );
+    );    
+    // println!(
+    //     "{}Error:{} {}Something went wrong{}",
+    //     color!(red),
+    //     color!(reset),
+    //     color!(yellow),
+    //     color!(reset)
+    // );
 }
