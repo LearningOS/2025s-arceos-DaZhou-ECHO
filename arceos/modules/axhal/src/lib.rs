@@ -64,7 +64,21 @@ pub mod console {
 
     /// Write a slice of bytes to the console.
     pub fn write_bytes(bytes: &[u8]) {
+        // for c in bytes {
+        //     putchar(*c);
+        // }
+        const ANSI_GREEN: &[u8] = b"\x1b[32m";
+        const ANSI_RESET: &[u8] = b"\x1b[0m";
+    
+        for c in ANSI_GREEN {
+            putchar(*c);
+        }
+    
         for c in bytes {
+            putchar(*c);
+        }
+    
+        for c in ANSI_RESET {
             putchar(*c);
         }
     }
