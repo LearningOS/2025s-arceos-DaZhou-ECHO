@@ -18,15 +18,15 @@ macro_rules! color {
 
 #[cfg_attr(feature = "axstd", no_mangle)]
 fn main() {
-    // println!("[WithColor]: Hello, Arceos!");
-    println!(
-        "{}[WithColor]:{} {}Hello, {}ArceOS{}!",
-        color!(bold),
-        color!(reset),
-        color!(green),
-        color!(cyan),
-        color!(reset)
-    );    
+    println!("{}[WithColor]: Hello, Arceos!",color!(green));
+    // println!(
+    //     "{}[WithColor]:{} {}Hello, {}ArceOS{}!",
+    //     color!(bold),
+    //     color!(reset),
+    //     color!(green),
+    //     color!(cyan),
+    //     color!(reset)
+    // );    
     // println!(
     //     "{}Error:{} {}Something went wrong{}",
     //     color!(red),
