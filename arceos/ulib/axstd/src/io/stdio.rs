@@ -168,6 +168,11 @@ pub fn __print_impl(args: core::fmt::Arguments) {
         // with kernel logs
         arceos_api::stdio::ax_console_write_fmt(args).unwrap();
     } else {
-        stdout().lock().write_fmt(args).unwrap();
+        // stdout().lock().write_fmt(args).unwrap();
+        // on axstd
+        let mut out = stdout().lock();
+        let _ = out.write_all(b"\x1b[32m");
+        let _ = out.write_fmt(args);
+        let _ = out.write_all(b"\x1b[0m");
     }
 }
