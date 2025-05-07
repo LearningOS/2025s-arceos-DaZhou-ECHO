@@ -5,3 +5,6 @@ edition = "2021"
 
 [dependencies]
 axstd = { workspace = true, features = ["alloc", "paging", "multitask", "sched_cfs", "fs"], optional = true }
+
+[features]
+default = ["axstd"]

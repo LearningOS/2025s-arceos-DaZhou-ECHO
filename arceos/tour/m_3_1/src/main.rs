@@ -32,7 +32,8 @@ fn main() {
     let mut uspace = axmm::new_user_aspace().unwrap();
 
     // Load user app binary file into address space.
-    let entry = match load_user_app("/sbin/fileops", &mut uspace) {
+    // let entry = match load_user_app("/sbin/fileops", &mut uspace) {
+        let entry = match load_user_app("/sbin/hello", &mut uspace) {
         Ok(e) => e,
         Err(err) => panic!("Cannot load app! {:?}", err),
     };
